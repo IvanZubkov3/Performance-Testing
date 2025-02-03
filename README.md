@@ -6,8 +6,7 @@ This project automates **API performance testing** using **Taurus and JMeter** w
 ✔️ **Runs API performance tests** on `https://reqres.in`.  
 ✔️ **Supports HTTP Methods**: `GET`, `POST`, `PUT`, `HEAD`, `DELETE`.  
 ✔️ **Generates Allure Reports** for tracking performance history.  
-✔️ **Logs test execution details & system environment**.  
-✔️ **Supports CI/CD automation with GitHub Actions**.  
+✔️ **Supports CI/CD automation with GitHub Actions**.  (In Progress)
 
 ---
 
