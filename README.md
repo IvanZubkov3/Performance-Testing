@@ -22,10 +22,9 @@ This project automates **API performance testing** using **Taurus and JMeter** w
 
 ---
 
-## 📌 Installation & Setup
+Run Taurus tests:
+bzt test.yml
 
-### 🔹 Install Python & Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # (Mac/Linux)
-venv\Scripts\activate      # (Windows)
+---
+Generating & Viewing Allure Reports:
+allure serve reports/allure-results
