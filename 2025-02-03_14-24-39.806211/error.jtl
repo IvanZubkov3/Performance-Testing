@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="12" lt="0" ts="1738610699654" s="false" lb="Delete User (DELETE)" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-7" dt="text" de="" by="2699" ng="10" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String">Content-Type=application%2Fjson</queryString>
+  <java.net.URL>http://reqres.in/api/users/2?Content-Type=application/json</java.net.URL>
+</httpSample>
+<httpSample t="34" lt="0" ts="1738610699635" s="false" lb="Check User Creation Headers (HEAD)" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-4" dt="text" de="" by="4506" ng="9" na="9">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Response was null</failureMessage>
+  </assertionResult>
+  <httpSample t="16" lt="0" ts="1738610699635" s="true" lb="Check User Creation Headers (HEAD)-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-4" dt="text" de="" by="838" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=6rmO%2FMcL7%2BDFWV08HFoQ5GDBI1oePxdoT38VhhuhfFdffHotZEJAxBpshCHcLU9ZFjrLXnhBWXAp85ZGzP492Rr6r%2B3KlkIiZW0qcdcAnl7fmVTjvHpHf0aamA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddc18b09e05-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=27775&amp;min_rtt=8713&amp;rtt_var=7658&amp;sent=312&amp;recv=318&amp;lost=0&amp;retrans=0&amp;sent_bytes=301104&amp;recv_bytes=59825&amp;delivery_rate=167565&amp;cwnd=185&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users</java.net.URL>
+  </httpSample>
+  <httpSample t="18" lt="0" ts="1738610699651" s="false" lb="Check User Creation Headers (HEAD)-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-4" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">HEAD</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">HEAD</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users</java.net.URL>
+</httpSample>
+<httpSample t="21" lt="14" ts="1738610699648" s="false" lb="Update User (PUT)" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-8" dt="text" de="" by="4681" ng="9" na="9">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <httpSample t="14" lt="14" ts="1738610699648" s="true" lb="Update User (PUT)-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-8" dt="text" de="" by="1013" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users/2
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=F%2Bn9oflLhrXzdc3ZxMPV3t7L8uyO8%2F5RWHY08KnrBHu52Vr%2FXvwgcLHYRSxy3OI4LXaUJbb06CLoKXdzVRiaBfgMJkamZQtES3nES1mV5O7Ec6%2FL9MzOdt%2F%2Bww%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddc292b8cd4-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=29862&amp;min_rtt=8392&amp;rtt_var=4917&amp;sent=274&amp;recv=278&amp;lost=0&amp;retrans=0&amp;sent_bytes=267480&amp;recv_bytes=53244&amp;delivery_rate=173975&amp;cwnd=127&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 61
+Content-Type: text/plain
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users/2</java.net.URL>
+  </httpSample>
+  <httpSample t="7" lt="0" ts="1738610699662" s="false" lb="Update User (PUT)-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-8" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users/2</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users/2</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users/2</java.net.URL>
+</httpSample>
+<httpSample t="42" lt="18" ts="1738610699627" s="false" lb="Get Users" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-9" dt="text" de="" by="4679" ng="9" na="9">
+  <httpSample t="18" lt="18" ts="1738610699627" s="true" lb="Get Users-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-9" dt="text" de="" by="1011" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users?page=2
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=3eYDqTIgmQW52RpAla3%2FNfo4v8wlTo2Hq58PzUfITNh0IxZqiEL%2B2cegdIAvpffJRyLgTYdSZF7OiXeTOtt08JYGHQWKb6VbvBCUyfFK5iIdiNFCWBDjq6Sy1g%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddc09cf43aa-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=33163&amp;min_rtt=8274&amp;rtt_var=10118&amp;sent=266&amp;recv=276&amp;lost=0&amp;retrans=0&amp;sent_bytes=259708&amp;recv_bytes=51697&amp;delivery_rate=176456&amp;cwnd=131&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users?page=2</java.net.URL>
+  </httpSample>
+  <httpSample t="24" lt="0" ts="1738610699645" s="false" lb="Get Users-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-9" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users?page=2</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users?page=2</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users?page=2</java.net.URL>
+</httpSample>
+<httpSample t="43" lt="0" ts="1738610699626" s="false" lb="Check User Creation Headers (HEAD)" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-6" dt="text" de="" by="4508" ng="9" na="9">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Response was null</failureMessage>
+  </assertionResult>
+  <httpSample t="17" lt="0" ts="1738610699626" s="true" lb="Check User Creation Headers (HEAD)-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-6" dt="text" de="" by="840" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=WKn0f7WbRFsMiM86DlQ0UB%2Bq%2FMjkVKeWBHPNYtwZrrBWosH%2BZjxziz1a4Hc4hciCvrQ0L8YbAodqvI0fUbYo5DY65sfgKhE7KPPERToyzR150waBem%2FkhYdWEw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddc0a421a30-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=30568&amp;min_rtt=8993&amp;rtt_var=7608&amp;sent=294&amp;recv=299&amp;lost=0&amp;retrans=0&amp;sent_bytes=286267&amp;recv_bytes=56906&amp;delivery_rate=162348&amp;cwnd=132&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users</java.net.URL>
+  </httpSample>
+  <httpSample t="26" lt="0" ts="1738610699643" s="false" lb="Check User Creation Headers (HEAD)-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-6" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">HEAD</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">HEAD</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users</java.net.URL>
+</httpSample>
+<httpSample t="14" lt="12" ts="1738610699654" s="false" lb="Get Users" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-10" dt="text" de="" by="4676" ng="9" na="9">
+  <httpSample t="12" lt="12" ts="1738610699654" s="true" lb="Get Users-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-10" dt="text" de="" by="1008" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users?page=2
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=sZcTQFkHlZqjv7JIoShmhO7FgiLPB8SK7PX1SJ8z3ATUqiVPRWWS1ld0SdMGD4kFT3Yb6puimgUHtIARq8OqjHzj27KHR3fBi7re68Qh%2FWjG8ItwfQ3agUQV5Q%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddc3e4ede9a-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=33015&amp;min_rtt=7917&amp;rtt_var=7612&amp;sent=241&amp;recv=259&amp;lost=0&amp;retrans=0&amp;sent_bytes=235106&amp;recv_bytes=46832&amp;delivery_rate=184413&amp;cwnd=238&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users?page=2</java.net.URL>
+  </httpSample>
+  <httpSample t="2" lt="0" ts="1738610699666" s="false" lb="Get Users-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-10" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users?page=2</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users?page=2</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users?page=2</java.net.URL>
+</httpSample>
+<httpSample t="54" lt="22" ts="1738610699614" s="false" lb="Get Users" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-5" dt="text" de="" by="4680" ng="9" na="9">
+  <httpSample t="22" lt="22" ts="1738610699614" s="true" lb="Get Users-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-5" dt="text" de="" by="1012" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users?page=2
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=3fse2kKsFpSwtdxcfuxH%2Bqx5o9xiDY9P5gl3pLqCrHEUO1cKbmxOn7WMVskwZahla9jdTTk7ge8%2B9s0pRwJ1syDws5ZOIl76zCkjwTAX3K5%2FTd47CZT45Yrnkw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddbfd8842bb-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=30919&amp;min_rtt=8220&amp;rtt_var=8557&amp;sent=318&amp;recv=321&amp;lost=0&amp;retrans=0&amp;sent_bytes=308768&amp;recv_bytes=61427&amp;delivery_rate=177615&amp;cwnd=187&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users?page=2</java.net.URL>
+  </httpSample>
+  <httpSample t="32" lt="0" ts="1738610699636" s="false" lb="Get Users-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-5" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users?page=2</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users?page=2</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users?page=2</java.net.URL>
+</httpSample>
+<httpSample t="36" lt="17" ts="1738610699632" s="false" lb="Delete User (DELETE)" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-2" dt="text" de="" by="4707" ng="9" na="9">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <httpSample t="17" lt="17" ts="1738610699632" s="true" lb="Delete User (DELETE)-0" rc="301" rm="Moved Permanently" tn="Reqres API Users-ThreadStarter 1-2" dt="text" de="" by="1039" ng="9" na="9">
+    <responseHeader class="java.lang.String">HTTP/1.1 301 Moved Permanently
+Date: Mon, 03 Feb 2025 19:24:57 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Cache-Control: max-age=3600
+Expires: Mon, 03 Feb 2025 20:24:57 GMT
+Location: https://reqres.in/api/users/2?Content-Type=application/json
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=Dp9dtZjLegRLOMy1s51spAWIFf8kGxS41jiVGlnWyu5kY5YzTr12JMcVm7NhB4DhdAiQUrj0ZfVEviCqU0l4oSFj%2Foyuz%2BZLYfhUA%2BMiwZxJ93VmYGxF0Hf%2BmQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 90c4cddc1c0cc32a-EWR
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=31614&amp;min_rtt=8308&amp;rtt_var=5237&amp;sent=339&amp;recv=343&amp;lost=0&amp;retrans=0&amp;sent_bytes=327283&amp;recv_bytes=65191&amp;delivery_rate=175734&amp;cwnd=148&amp;unsent_bytes=0&amp;cid=0000000000000000&amp;ts=0&amp;x=0&quot;
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <java.net.URL>http://reqres.in/api/users/2?Content-Type=application/json</java.net.URL>
+  </httpSample>
+  <httpSample t="19" lt="0" ts="1738610699649" s="false" lb="Delete User (DELETE)-1" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-2" dt="text" de="" by="3668" ng="9" na="9">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>https://reqres.in/api/users/2?Content-Type=application/json</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)&#xd;
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)&#xd;
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.followRedirects(HTTPSamplerBase.java:1672)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.resultProcessing(HTTPSamplerBase.java:1766)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPAbstractImpl.resultProcessing(HTTPAbstractImpl.java:555)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:737)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">https://reqres.in/api/users/2?Content-Type=application/json</redirectLocation>
+  <java.net.URL>https://reqres.in/api/users/2?Content-Type=application/json</java.net.URL>
+</httpSample>
+<httpSample t="12" lt="0" ts="1738610699654" s="false" lb="Delete User (DELETE)" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Reqres API Users-ThreadStarter 1-1" dt="text" de="" by="2699" ng="10" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: reqres.in
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)&#xd;
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)&#xd;
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)&#xd;
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:939)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:650)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:66)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1301)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1290)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:651)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:570)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268)&#xd;
+	at java.base/java.lang.Thread.run(Thread.java:842)&#xd;
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String">Content-Type=application%2Fjson</queryString>
+  <java.net.URL>http://reqres.in/api/users/2?Content-Type=application/json</java.net.URL>
+</httpSample>
+
+</testResults>

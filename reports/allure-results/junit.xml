@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-102120406249" name="Check User Creation Headers (HEAD)">
+      <error message="Non HTTP response message: Socket closed" type="Error">Non HTTP response message: Socket closed
+(status code is Non HTTP response code: java.net.SocketException)
+(total errors of this type: 2)</error>
+    </testcase>
+    <testcase classname="bzt-102120406249" name="Create User (POST)"/>
+    <testcase classname="bzt-102120406249" name="Delete User (DELETE)">
+      <error message="Non HTTP response message: Socket closed" type="Error">Non HTTP response message: Socket closed
+(status code is Non HTTP response code: java.net.SocketException)
+(total errors of this type: 3)</error>
+    </testcase>
+    <testcase classname="bzt-102120406249" name="Get Users">
+      <error message="Non HTTP response message: Socket closed" type="Error">Non HTTP response message: Socket closed
+(status code is Non HTTP response code: java.net.SocketException)
+(total errors of this type: 3)</error>
+    </testcase>
+    <testcase classname="bzt-102120406249" name="Update User (PUT)">
+      <error message="Non HTTP response message: Socket closed" type="Error">Non HTTP response message: Socket closed
+(status code is Non HTTP response code: java.net.SocketException)
+(total errors of this type: 1)</error>
+    </testcase>
+  </testsuite>
+</testsuites>

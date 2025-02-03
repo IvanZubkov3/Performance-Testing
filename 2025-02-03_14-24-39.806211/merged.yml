@@ -1,0 +1,33 @@
+---
+execution:
+- concurrency: 10
+  hold-for: 30s
+  ramp-up: 5s
+  scenario: jmeter
+modules:
+  jmeter:
+    path: C:\JMeter\bin\jmeter.bat
+    version: 5.5
+passfail:
+- avg-rt>200ms for 80% of samples, stop as failed
+- failures>5%, stop as failed
+pre-exec:
+- python log_env.py
+provisioning: local
+reporting:
+- module: console
+- module: final-stats
+- filename: reports/allure-results/junit.xml
+  module: junit-xml
+scenarios:
+  jmeter:
+    properties:
+      jmeter.save.saveservice.output_format: xml
+      jmeter.save.saveservice.request_data: true
+      jmeter.save.saveservice.response_data: true
+      log_level.jmeter: DEBUG
+    script: jmeter_tests/performance_test.jmx
+settings:
+  check-updates: false
+  default-executor: jmeter
+

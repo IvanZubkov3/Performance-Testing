@@ -1,0 +1,51 @@
+{
+ "settings": {
+  "check-updates": false,
+  "default-executor": "jmeter"
+ },
+ "execution": [
+  {
+   "scenario": "jmeter",
+   "concurrency": 10,
+   "ramp-up": "5s",
+   "hold-for": "30s"
+  }
+ ],
+ "scenarios": {
+  "jmeter": {
+   "script": "jmeter_tests/performance_test.jmx",
+   "properties": {
+    "log_level.jmeter": "DEBUG",
+    "jmeter.save.saveservice.output_format": "xml",
+    "jmeter.save.saveservice.response_data": true,
+    "jmeter.save.saveservice.request_data": true
+   }
+  }
+ },
+ "reporting": [
+  {
+   "module": "console"
+  },
+  {
+   "module": "final-stats"
+  },
+  {
+   "module": "junit-xml",
+   "filename": "reports/allure-results/junit.xml"
+  }
+ ],
+ "provisioning": "local",
+ "passfail": [
+  "avg-rt>200ms for 80% of samples, stop as failed",
+  "failures>5%, stop as failed"
+ ],
+ "modules": {
+  "jmeter": {
+   "version": 5.5,
+   "path": "C:\\JMeter\\bin\\jmeter.bat"
+  }
+ },
+ "pre-exec": [
+  "python log_env.py"
+ ]
+}
