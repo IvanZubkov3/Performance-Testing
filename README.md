@@ -22,9 +22,9 @@ This project automates **API performance testing** using **Taurus and JMeter** w
 
 ---
 
-Run Taurus tests:
+Run Taurus tests:|
 bzt test.yml
 
 ---
-Generating & Viewing Allure Reports:
+Generating & Viewing Allure Reports:|
 allure serve reports/allure-results
